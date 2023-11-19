@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== ícones Box ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="perfil.css">
+
+        <title>Responsive sidebar submenus</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="header">
+            <div class="header__container">
+                <img src="img/claudio.jpeg" alt="" class="header__img">
+
+                <a href="home.html"><img src="img/175202.jpeg" width="100px"></a>
+    
+                <div class="header__search">
+                    <input type="search" placeholder="Search" class="header__input">
+                    <i class='bx bx-search header__icon'></i>
+                </div>
+    
+                <div class="header__toggle">
+                    <i class='bx bx-menu' id="header-toggle"></i>
+                </div>
+            </div>
+        </header>
+
+        <!--========== NAV ==========-->
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div>
+                    <a href="#" class="nav__link nav__logo">
+                        <i class='bx bxs-disc nav__icon' ></i>
+                        <img src="img/175202.jpeg" width="100px">
+                    </a>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">Profile</h3>
+    
+                            <a href="home.html" class="nav__link active">
+                                <i class='bx bx-home nav__icon' ></i>
+                                <span class="nav__name">Home</span>
+                            </a>
+                            
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-user nav__icon' ></i>
+                                    <span class="nav__name">Profile</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="reserva_refeicao.html" class="nav__dropdown-item">Reserva</a>
+                                        <a href="historico.html" class="nav__dropdown-item">Histórico</a>
+                                        <a href="perfil.html" class="nav__dropdown-item">Perfil</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-message-rounded nav__icon' ></i>
+                                <span class="nav__name">Messages</span>
+                            </a>
+                        </div>
+    
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">Menu</h3>
+    
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-bell nav__icon' ></i>
+                                    <span class="nav__name">Notifications</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                  <div class="nav__dropdown-content">
+                                      <a href="#" class="nav__dropdown-item">Horário</a>
+                                      <a href="#" class="nav__dropdown-item">Comunicação interna</a>
+                                      <a href="#" class="nav__dropdown-item">Programação</a>
+                                  </div>
+                              </div>
+
+                            </div>
+
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-compass nav__icon' ></i>
+                                <span class="nav__name">Explorar</span>
+                            </a>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <a href="index.html" class="nav__link nav__logout">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+
+        <!--========== Conteúdo ==========-->
+        <main>
+            
+           <!-- Conteúdo da página -->
+  
+          <div class="col-xl-8 order-xl-1">
+            <div class="card bg-secondary shadow">
+              <div class="card-header bg-white border-0">
+                <div class="row align-items-center">
+                  <div class="col-8">
+                    <h3 class="mb-0">My account</h3>
+                  </div>
+                  <div class="col-4 text-right">
+                    <a href="#!" class="btn btn-sm btn-primary">Settings</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <form>
+                  <h6 class="heading-small text-muted mb-4">Informação do usuário</h6>
+                  <div class="pl-lg-4">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input-username">Usuário</label>
+                          <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Username" value="Cláudio@fortes.com.br">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label class="form-control-label" for="input-email">Email</label>
+                          <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="Cláudio@fortes.com.br">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input-first-name">Nome</label>
+                          <input type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="First name" value="Cláudio">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input-last-name">Last name</label>
+                          <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Last name" value="Silva">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="my-4">
+                  <!-- Address -->
+                  <h6 class="heading-small text-muted mb-4">Informações de contato</h6>
+                  <div class="pl-lg-4">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input-address">Endereço</label>
+                          <input id="input-address" class="form-control form-control-alternative" placeholder="Home Address" value="Rua " type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input-city">Cidade</label>
+                          <input type="text" id="input-city" class="form-control form-control-alternative" placeholder="City" value="Vila Velha">
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input-country">Estado</label>
+                          <input type="text" id="input-country" class="form-control form-control-alternative" placeholder="Country" value="Espirito Santo">
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="form-group">
+                          <label class="form-control-label" for="input-country">CEP</label>
+                          <input type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="29.000.000">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="my-4">
+                  <!-- Descrição -->
+                  <h6 class="heading-small text-muted mb-4">Sobre mim</h6>
+                  <div class="pl-lg-4">
+                    <div class="form-group focused">
+                      <label>Sobre mim</label>
+                      <textarea rows="4" class="form-control form-control-alternative" placeholder="A few words about you ...">Sou Técnico em Construção Civil na Fortes Engenharia</textarea>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </body>
+  </body>
+  </html>
+  
+        </main>
+
+        <!--========== Chamando o arquivo JS ==========-->
+        <script src="main.js"></script>
+    </body>
+</html>
