@@ -6,16 +6,16 @@ const showMenu = (headerToggle, navbarId) =>{
     // Validar que a variável existe
     if(headerToggle && navbarId){
         toggleBtn.addEventListener('click', ()=>{
-            // We add the show-menu class to the div tag with the nav__menu class
+            // Adiciona a classe show-menu à tag div com a classe nav__menu
             nav.classList.toggle('show-menu');
-            // change icon
+            // Mudar ícone
             toggleBtn.classList.toggle('bx-x');
         })
     }
 }
 showMenu('header-toggle','navbar')
 
-/*==================== LINK ACTIVE ====================*/
+/*==================== Link ativo ====================*/
 const linkColor = document.querySelectorAll('.nav__link')
 
 function colorLink(){
